@@ -2,7 +2,7 @@
 nMax = 1000;
 
 % The maximum number of systems of equations to solve
-maxIter = 10;
+maxIter = 100;
 
 % ammount of dimensions to skip per matrix size iteration
 dimSkip = 100;
@@ -26,7 +26,7 @@ for n = 1:(nMax/dimSkip)
         %Solve the system using the Gaussian Elimination
         tic;
         for i = 1:iter
-            X1 = GaussElimination(A,b);
+            X1 = GaussElimination(A,b(:,i));
         end
         geTime(n,iter) = toc;
         
