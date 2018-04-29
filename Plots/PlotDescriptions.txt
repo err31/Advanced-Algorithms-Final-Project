@@ -1,0 +1,7 @@
+GE10-GE1000 contain the different runtimes based on iterations with the Gaussian elimination data
+
+noGE100-noGE1000 contain the different runtime based on iterations without the Gaussian elimination data
+
+GEruntime contains the different runtimes based on matrix dimensions with fixed 100 iterations with Gaussian elimination data
+
+noGEruntime contains the different runtimes based on matrix dimensions with fixed 100 iterations without Gaussian elimination data
